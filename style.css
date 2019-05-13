@@ -6,6 +6,7 @@ body, html {
     color: #fff;
 }
 
+
 .header__img {
     position: relative;
     width: 100%;
@@ -94,12 +95,12 @@ body, html {
 }
 
 footer {
+    box-sizing: border-box;
+    width: 100%;
     color: #fff;
     background-color: #363C42;
-    padding: 1rem 7rem;
     display: flex !important;
-    align-items: center;
-    justify-content: space-between;
+    flex-flow: column;
 }
 
 footer ul {
@@ -113,6 +114,7 @@ footer a {
 }
 
 footer h3 {
+    text-align: center;
     font-weight: lighter;
 }
 
@@ -129,5 +131,12 @@ footer ul li {
     .gallery {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+
+    footer {
+        padding: 1.5rem 7rem;
+        align-items: center;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 }
